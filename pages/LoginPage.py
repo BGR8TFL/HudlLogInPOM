@@ -45,7 +45,6 @@ class LoginPage(BasePage):
     def click_login(self, by, locator):
         self.driver.find_element(by, locator).click()
 
-
     def fill_form_element_email(self, email_textbox, email):
         self.driver.find_element(By.ID, "email").send_keys(os.environ["HUDL_EMAIL"])
 
@@ -125,14 +124,6 @@ class LoginPage(BasePage):
         # locate the logout button on the page and click it
         log_out_button = self.driver.find_element(By.XPATH, "//a[text()='Log Out']")
         log_out_button.click()
-
-
-
-
-
-
-
-
 
 
 
