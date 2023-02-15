@@ -2,13 +2,13 @@
 
 import os
 import time
-from argparse import Action
 import pytest
 from selenium import webdriver
 from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.common.by import By
 from pages.LoginPage import LoginPage
-import conf
+from config import conf
+
 
 @pytest.fixture(scope="module")
 def setup_driver():
@@ -134,5 +134,3 @@ def pytest_assertion_interact(node, report):
     if report.when == "call" and report.failed:
         file_name = f"{node.parent.parent.name}_{node.parent.name}_{node.name}.png"
         node.parent.parent.parent.driver.get_screenshot_as_file(file_name)
-
-

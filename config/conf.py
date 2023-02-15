@@ -6,6 +6,12 @@ import os
 base_url = "https://www.hudl.com"
 BROWSER = "Chrome"
 
+# Define config
+class Conf:
+    pass
+
+conf = Conf()
+
 # Check if the HUDL_EMAIL and HUDL_PASSWORD environment variables are set
 # if yes, store values in respective variables. If environment variables not set, set the variables to an empty string.
 # this allows us to keep the sensitive information such as emails and passwords in the test_env.env file and not in repo.

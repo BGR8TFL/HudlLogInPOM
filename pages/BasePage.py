@@ -1,14 +1,15 @@
-# BasePage.py:  contains the common actions and elements used across all the pages in the web application.
-
 import locators
-import conf
+from config.conf import base_url
 
+# This method will initialize the driver, URL, and locators.
 class BasePage:
-    # This method will initialize the driver, URL, and locators.
     def __init__(self, driver):
         self.driver = driver
-        self.url = conf.base_url
+        self.base_url = base_url
         self.locator = locators
+
+    def navigate(self):
+        self.driver.get(self.base_url)
 
     # This method will find an element on the page using the specified locator.
     def find_element(self, locator_type, locator):
@@ -35,4 +36,4 @@ class BasePage:
 
     # This method will navigate to the specified URL.
     def navigate_to(self):
-        self.driver.get(self.url)
+        self.driver.get(self.base_url)
