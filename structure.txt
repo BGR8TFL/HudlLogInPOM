@@ -1,0 +1,29 @@
+#project structure:  folder structure and description of project
+
+HudlLogInPOM/
+  |
+  |- conf.py
+  |- locators.py
+  |- test_env.env
+  |- BasePage.py
+  |- LoginPage.py
+  |- test_case.py
+  |- report.html (generated after running the tests)
+  |- screenshots/ (folder to store screenshots taken during the tests)
+
+
+conf.py: contains configuration settings for the project.
+
+locators.py: contains element locators used in the test cases.
+
+test_env.env: contains environment variables used in the test cases.
+
+BasePage.py: contains the common actions and elements used across all the pages in the web application.
+
+LoginPage.py: contains the specific functions and elements that are unique to the login page in the web application.
+
+test_case.py: contains the actual test cases that are run using the Page Object Model.
+
+report.html: generated after running the tests, contains a detailed report of the test results.
+
+screenshots/: a folder to store screenshots taken during the tests.

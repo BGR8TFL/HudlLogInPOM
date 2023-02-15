@@ -1,0 +1,4 @@
+# .gitignore file
+...
+# Environment variables file
+test_env.env
