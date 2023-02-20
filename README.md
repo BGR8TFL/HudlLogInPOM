@@ -62,4 +62,5 @@ This project includes the following files:
 
 
 ## Creator
+Jason Avery - averyjl@gmail.com
 Contributions to this project are welcome! If you find a bug or would like to suggest an enhancement, please open an issue or submit a pull request.
