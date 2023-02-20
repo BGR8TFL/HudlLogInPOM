@@ -1,39 +1,64 @@
-README.md
-Introduction
-This project is an automated test using pytest, pycharm, and selenium webdriver to test the login functionality of a website.
+# Readme
 
-Prerequisites
-Python 3.x
-Pytest
-Pycharm
-Selenium Webdriver
-Chrome Driver
-Conf file that contains the base URL of the website being tested
-Environmental variables for the username and password
-How to run the tests
-Clone the repository to your local machine
-Install the required packages using pip install -r requirements.txt
-Set the environmental variables for the username and password
-Open the project in Pycharm
-Right-click on the test_case.py file and select Run
-Test Description
-The project contains two test cases:
+[![](https://img.shields.io/badge/hudl-OSS-orange.svg)](http://hudl.github.io/)
 
-test_login_page: This test case validates the different elements present on the login page such as the email field, password field, remember me checkbox, need help link, login with organization link, and sign-up link.
+This project is a Python-based framework using the Page Object Model (POM) approach built with pytest and Selenium WebDriver for logging into the Hudl web application. It includes test cases that validate login functionality and user experience.
 
-test_login: This test case performs the following actions:
+## Table of Contents
+- [Prerequisites](#prerequisites)
+- [Getting Started](#getting-started)
+- [Usage](#usage)
+- [Files](#files)
+- [Artifacts](#artifacts)
+- [Creator](#creator)
 
-Verifies that the session is logged out
-Logs in to the website using the username and password provided through environmental variables
-Verifies that the user is taken to the home page
-Verifies that the user is logged in securely
-Navigates using browser forward and back buttons to non-secure site, then back to secure site
-Verifies that the user is still logged in
-Verifies the user details by mouse over the user name
-Logs out from the website
-Verifies that the session is logged out
-Error handling and Screenshots
-In case of any test failure, a screenshot of the failure is captured and stored in the project directory with the file name format test_case_test_login_page_test_login.png.
+## Prerequisites
+- Python 3.x
+- Pytest
+- Pycharm (or other IDE)
+- Selenium Webdriver
+- Chrome Driver
+- Conf file that contains the base URL of the website being tested, included in repo.
+- Environmental variables for `HUDL_EMAIL` and `HUDL_PASSWORD`
 
-Conclusion
-This project provides a basic automated test for the login functionality of a website using pytest, pycharm, and selenium webdriver. The test cases validate the different elements on the login page and the login functionality of the website. In case of any test failure, the screenshot of the failure is captured for easy debugging.
+
+## Getting Started
+To get started with this project, you will need Python 3 and PyCharm installed on your machine.
+
+1. Clone this repository to your local machine.
+2. Open the HudlLogInPOM directory in PyCharm.
+3. Install the required Python packages by running the following command in the terminal: `pip install -r requirements.txt`
+4. Set up the environment variables for the `HUDL_EMAIL` and `HUDL_PASSWORD` in your operating system or in PyCharm.
+5. Run the tests by selecting the test case in PyCharm and clicking the "Run" button, or Right-click on the test_case.py file and select Run.
+
+
+## Usage
+This POM framework includes two test cases for the Hudl login page:
+
+1. `test_login_page`: This test case validates the presence of the email, password, remember me checkbox, need help link, log in with an organization link, and sign up link fields on the login page.
+2. `test_login`: This test case validates the login functionality by logging in with the provided credentials, checking for secure login, verifying the user is logged in as the correct user, verifying the user is able to log out successfully, and checking that the user is redirected to the login page after logging out.
+3. `test_login_with_incorrect_credentials`: Test case verifies login page displays error message with incorrect credentials.
+
+
+## Files
+This project includes the following files:
+
+- `test_case.py`: This file contains the two test cases for the Hudl login page.
+- `conftest.py`: This file contains configuration settings for the project.
+- `conf.py`: This file contains configuration settings for the project, including the base URL and browser type.
+- `utils.py`: This file contains a function for waiting for an expected condition to be met within a specified timeout.
+- `locators.py`: This file contains the element locators used in the test cases.
+- `LoginPage.py`: This file contains the specific functions and elements that are unique to the login page in the web application.
+- `BasePage.py`: This file contains the base class for the Page Object Model framework, including the driver, URL, and locators.
+
+
+## Test Artifacts 
+- Test Plan
+- Test Cases
+- Future testing Phase 2
+- See [Test Artifacts](https://github.com/BGR8TFL/HudlLogInPOM/blob/main/test_artifacts.pdf)
+
+
+
+## Creator
+Contributions to this project are welcome! If you find a bug or would like to suggest an enhancement, please open an issue or submit a pull request.

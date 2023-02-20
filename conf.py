@@ -1,16 +1,23 @@
-#conf.py: contains configuration settings for the project.
+"""
+conf.py:
+
+This module contains configuration settings.
+
+Variables:
+- base_url: str - base URL of the app.
+- BROWSER: str - browser used.
+- HUDL_EMAIL: str - email address used (not saved in project repo).
+- HUDL_PASSWORD: str - password used (not saved in project repo).
+
+If HUDL_EMAIL and HUDL_PASSWORD environment variables are set, their values are used for login. Otherwise, set to an empty string.
+"""
+
 
 import os
 
-# Configuration settings for the test environment
+
 base_url = "https://www.hudl.com"
 BROWSER = "Chrome"
-
-# Define config
-class Conf:
-    pass
-
-conf = Conf()
 
 # Check if the HUDL_EMAIL and HUDL_PASSWORD environment variables are set
 # if yes, store values in respective variables. If environment variables not set, set the variables to an empty string.
