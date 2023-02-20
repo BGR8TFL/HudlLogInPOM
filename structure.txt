@@ -6,6 +6,7 @@ HudlLogInPOM/
   |- locators.py
   |- conftest.py
   |- structure.txt
+  |- requirements.txt
   |- pages/ (folder to store pages for the Page Object Model)
   |- pages/BasePage.py
   |- pages/LoginPage.py
@@ -38,5 +39,7 @@ report.html: generated after running the tests, contains a detailed report of th
 screenshots/: a folder to store screenshots taken during the tests.
 
 README.md: readme with project prerequisite
+
+requirements.txt: contain names and versions of Python packages installed 
 
 test_artifacts.pdf:  Test Plan, test cases, phase 2 future testing out of scope for this interview project.
