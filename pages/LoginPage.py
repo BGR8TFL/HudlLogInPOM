@@ -46,7 +46,7 @@ class LoginPageClass(BasePageClass):
 
     def get_login_with_org_link(self):
         return self.driver.find_element(By.LINK_TEXT, 'Log In with an Organization')
-#####
+
     def get_sign_up_link(self):
         return self.driver.find_element(By.LINK_TEXT, 'Sign up')
 
@@ -67,7 +67,7 @@ class LoginPageClass(BasePageClass):
 
     def fill_form_element_password(self, password_textbox, password):
         self.driver.find_element(By.ID, "password").send_keys(os.environ["HUDL_PASSWORD"])
-#######
+
     def get_title(self):
         return self.driver.title
 
