@@ -9,7 +9,7 @@ This project is a Python-based framework using the Page Object Model (POM) appro
 - [Getting Started](#getting-started)
 - [Usage](#usage)
 - [Files](#files)
-- [Artifacts](#artifacts)
+- [Test Artifacts](#test-artifacts)
 - [Creator](#creator)
 
 ## Prerequisites
@@ -50,9 +50,10 @@ This project includes the following files:
 - `locators.py`: This file contains the element locators used in the test cases.
 - `LoginPage.py`: This file contains the specific functions and elements that are unique to the login page in the web application.
 - `BasePage.py`: This file contains the base class for the Page Object Model framework, including the driver, URL, and locators.
+- `test_artifacts.pdf`:  This file contains the Test Plan, Test Cases and phase 2 testing out of scope for this interview project.
 
 
-## Test Artifacts 
+## Test Artifacts
 - Test Plan
 - Test Cases
 - Future testing Phase 2
