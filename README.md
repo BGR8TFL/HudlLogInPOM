@@ -33,7 +33,7 @@ To get started with this project, you will need Python 3 and PyCharm installed o
 
 
 ## Usage
-This POM framework includes two test cases for the Hudl login page:
+This POM framework includes three test cases for the Hudl login page:
 
 1. `test_login_page`: This test case validates the presence of the email, password, remember me checkbox, need help link, log in with an organization link, and sign up link fields on the login page.
 2. `test_login`: This test case validates the login functionality by logging in with the provided credentials, checking for secure login, verifying the user is logged in as the correct user, verifying the user is able to log out successfully, and checking that the user is redirected to the login page after logging out.
