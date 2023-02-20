@@ -2,34 +2,41 @@
 
 HudlLogInPOM/
   |
-  |- locators.py
   |- test_case.py
-  |- report.html
-  |- config/test_env.env
-  |- config/conf.py
+  |- locators.py
+  |- conftest.py
+  |- structure.txt
+  |- pages/ (folder to store pages for the Page Object Model)
   |- pages/BasePage.py
   |- pages/LoginPage.py
   |- config/ (folder to store config files such as test_env.env)
-  |- pages/ (folder to store pages for the Page Object Model)
+  |- config/test_env.env
+  |- config/conf.py
   |- screenshots/ (folder to store screenshots taken during the tests)
+  |- report.html
   |- README.md
   |- .gitignore
 
 
-conf.py: contains configuration settings for the project.
+
+test_case.py: contains the actual test cases that are run using the Page Object Model.
 
 locators.py: contains element locators used in the test cases.
-
-test_env.env: contains environment variables used in the test cases.
 
 BasePage.py: contains the common actions and elements used across all the pages in the web application.
 
 LoginPage.py: contains the specific functions and elements that are unique to the login page in the web application.
 
-test_case.py: contains the actual test cases that are run using the Page Object Model.
+conf.py: contains configuration settings for the project.
+
+conftest.py: configuration settings and fixtures.
+
+test_env.env: contains environment variables used in the test cases.
 
 report.html: generated after running the tests, contains a detailed report of the test results.
 
 screenshots/: a folder to store screenshots taken during the tests.
 
 README.md: readme with project prerequisite
+
+test_artifacts.pdf:  Test Plan, test cases, phase 2 future testing out of scope for this interview project.
