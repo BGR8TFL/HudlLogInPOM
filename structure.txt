@@ -12,7 +12,7 @@ HudlLogInPOM/
   |- pages/LoginPage.py
   |- config/ (folder to store config files such as test_env.env)
   |- config/test_env.env
-  |- config/conf.py
+  |- conf.py
   |- screenshots/ (folder to store screenshots taken during the tests)
   |- report.html
   |- README.md
