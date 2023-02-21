@@ -43,7 +43,7 @@ This POM framework includes three test cases for the Hudl login page:
 ## Files
 This project includes the following files:
 
-- `test_case.py`: This file contains the two test cases for the Hudl login page.
+- `test_case.py`: This file contains the three test cases for the Hudl login page.
 - `conftest.py`: This file contains configuration settings for the project.
 - `conf.py`: This file contains configuration settings for the project, including the base URL and browser type.
 - `utils.py`: This file contains a function for waiting for an expected condition to be met within a specified timeout.
